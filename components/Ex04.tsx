@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
 import * as Notifications from "expo-notifications";
+import { useEffect, useState } from "react";
 import { Alert, Button, Text, View } from "react-native";
-import { registerForPushNotificationsAsync } from "../../utils/notifications";
+import { registerForPushNotificationsAsync } from "../utils/notifications";
 
 export default function Ex04() {
   const [expoPushToken, setExpoPushToken] = useState<string | null>(null);

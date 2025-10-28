@@ -1,10 +1,10 @@
-import React, { useEffect } from "react";
-import { Alert, Button, Platform, View } from "react-native";
+import Ex01 from "@/components/Ex01";
+import Ex03 from "@/components/Ex03";
+import Ex04 from "@/components/Ex04";
+import Ex06 from "@/components/Ex06";
 import * as Notifications from "expo-notifications";
-import Ex01 from "../components/ex/Ex01";
-import Ex03 from "@/components/ex/Ex03";
-import Ex04 from "@/components/ex/Ex04";
-import Ex06 from "@/components/ex/Ex06";
+import { useEffect } from "react";
+import { Alert, Button, Platform, View } from "react-native";
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
@@ -54,8 +54,8 @@ export default function HomeScreen() {
     <View style={{ flex: 1 }}>
       {/* <Ex01 /> */}
       {/* <Ex03 /> */}
-      {/* <Ex04 />
-      <Ex06 /> */}
+      {/* <Ex04 /> */}
+      <Ex06 />
       <Button title="Gửi Local Notification" onPress={sendNotification} />
     </View>
   );
